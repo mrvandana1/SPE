@@ -9,7 +9,7 @@ import os
 # --------------------------------------------------------
 # Load environment
 # --------------------------------------------------------
-load_dotenv("../.env")
+load_dotenv(".env")
 
 API_KEY = os.environ.get("GEMINI_API_KEY")
 if not API_KEY:
@@ -18,7 +18,7 @@ if not API_KEY:
 GENIE_MODEL = "gemini-2.0-flash"
 TOP_K = 2
 
-CHROMA_PATH = "../chroma_julius_caesar"
+CHROMA_PATH = "./chroma_julius_caesar"
 
 # --------------------------------------------------------
 # Load Chroma Collections 
